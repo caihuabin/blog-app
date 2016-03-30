@@ -1,2 +1,2 @@
-# laravel-blog
-laravel-blog is a blog project written in laravel.
+# blog-app
+blog-app is a blog webapp written in laravel.
