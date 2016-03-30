@@ -26,12 +26,12 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => env('URL', 'http://localhost'),
 
 
-    'url_static' => 'http://localhost:8081/blog-app/public',
+    'url_static' => env('URL_STATIC', 'http://localhost'),
 
-    'user_static' => 'http://localhost:8081/blog-app/public',
+    'user_static' => env('USER_STATIC', 'http://localhost'),
 
     /*
     |--------------------------------------------------------------------------

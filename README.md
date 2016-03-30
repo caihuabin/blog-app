@@ -41,12 +41,14 @@
     cd blog-app
     composer install
     
-### 3. Database建立
+### 3. Database建立，配置应用参数
 
-配置数据库信息, 然后: 
+	cp .env.example .env
+	vi .env
 
-    php artisan migrate
+编辑.env，配置数据库：DB_HOST、DB_DATABASE、DB_USERNAME、DB_PASSWORD，并建立数据库；配置应用信息URL、URL_STATIC、USER_STATIC。
 
-
-
+建立数据表
+	
+	php artisan migrate
 
