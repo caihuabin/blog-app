@@ -1,54 +1,57 @@
 # blog-app
-使用Laravel开发的一个webapp博客。
 
-## 截图
+## Introduction
 
-### 登录页面
+Blog-App is a blog webapp written in Laravel 5.1. 
+
+## Screenshots
+
+### Sign in
 
 ![](https://raw.githubusercontent.com/icyse/carte/master/image/screenshot0.png) 
 
-### 列表、图片轮播组件
+### List and Picture Carousel
 
 ![](https://raw.githubusercontent.com/icyse/carte/master/image/screenshot2.png)
 
-### 内容页面、comment组件
+### Content and Comment
 
 ![](https://raw.githubusercontent.com/icyse/carte/master/image/screenshot3.png)
 
-### 幻灯片
+### Picture Slide
 
 ![](https://raw.githubusercontent.com/icyse/carte/master/image/screenshot4.png)
 
-### feed组件
+### Feed
 
 ![](https://raw.githubusercontent.com/icyse/carte/master/image/screenshot6.png)
 
-## 运行环境
+## Requirements and Environment
 
 * PHP 5.5.9+
 * Laravel 5.1+
 
-## 安装使用
+## Installation
 
-需使用apache或nginx部署服务器.
+Recommended using [Homestead](http://laravel.com/docs/4.2/homestead) for development.
 
-### 1. Clone 项目
+### 1. Clone the repo
 
-    git clone https://github.com/icyse/carte
+    git clone https://github.com/icyse/blog-app.git
 
 ### 2. Composer install
 
     cd blog-app
     composer install
     
-### 3. Database建立，配置应用参数
+### 3. Database stuff
 
 	cp .env.example .env
 	vi .env
 
-编辑.env，配置数据库：DB_HOST、DB_DATABASE、DB_USERNAME、DB_PASSWORD，并建立数据库；配置应用信息URL、URL_STATIC、USER_STATIC。
+Edit .env, ajust the database information: DB_HOST、DB_DATABASE、DB_USERNAME、DB_PASSWORD;ajust other information: URL、URL_STATIC、USER_STATIC.
 
-建立数据表
+Then:
 	
 	php artisan migrate
 
